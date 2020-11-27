@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="join.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Join Us</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">OUT<span class="span-logo">Link.</span></div>
+        <ul class="nav-links">
+            <li class="join"><a href="">Join</a> </li>
+            <li class="signin"><a href="">Sign in</a></li>
+        </ul>
+    </nav>
+    <div class="personal-info">
+        <form action="POST">
+            <div class="first-line">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+            </div>
+            <div class="secone-line">
+                <input type="email" name="email" id="email" placeholder="Email Adress">
+            </div>
+            <div class="third-line">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="number" name="number" id="phoneNumber" placeholder="Phone Number">
+            </div>
+            <div class="fourth-line">
+                <select name="location" id="location"></select>
+                <select name="nationality" id="nationality"></select>
+            </div>
+        </form>
+
+    </div>
+    <script src="join.js"></script>
+</body>
+
+</html>

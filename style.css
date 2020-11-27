@@ -7,11 +7,12 @@
   }
   
   body {
-      font-family: Roboto Mono;
+    font-family: 'Roboto Mono', monospace;
       font-size: 16px;
       scroll-behavior: smooth;
       transition: all 2.3s ease;
       animation: body-fade-in 1.3s;
+      background-color: rgba(255, 255, 255, 0.5);
   }
   
   nav {
@@ -136,6 +137,8 @@
       display: flex;
       height: 100vh;
       margin-top: 100px;
+      z-index: -2;
+      
   }
   
   .search-left {
@@ -181,6 +184,7 @@
       border-radius: 16px;
       border: none;
       margin-left: 60px;
+      z-index: -1;
   }
   
   .search-teacher-bar-input {
@@ -195,6 +199,7 @@
       font-size: 1.5em;
       font-family: Roboto Mono;
       color: grey;
+      margin-top: 50px;
   }
   
   .search-location-bar-input {
@@ -214,7 +219,99 @@
       text-decoration: none;
       color: grey;
   }
-  
+  .reason{
+    box-sizing: border-box;
+    height: 100vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 100px;
+    margin-top: 5%;
+    background: linear-gradient(to right, rgba(188, 237, 240, 0.3), rgb(255, 255, 255));
+    padding-top: 100px;
+    
+
+  }
+  .reason li{
+      list-style: none;
+      margin-top: 25px;
+      font-size: 20px;
+      margin-left: 20px;
+  }
+  .reason li h2{
+      width: 100%;
+      font-weight: 300;
+  }
+  .reason li::before{
+      content: 'x';
+      font-size: 30px;
+      font-weight: 300;
+      font-family: 'Pacifico', cursive;
+      position: relative;
+      margin-right: 20px;
+      z-index: -1;
+
+  }
+  .get-started{
+    box-sizing: border-box;
+    height: 100vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 100px;
+    margin-top: 5%;
+    background: linear-gradient(to right, rgba(188, 237, 240, 0.3), rgb(255, 255, 255));
+    padding-top: 100px;
+    
+
+  }
+  .get-started .question{
+      font-weight: bold;
+  }
+  .get-started li{
+    list-style: none;
+    margin-top: 25px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.get-started h1{
+    font-size: 30px;
+}
+.get-started  p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.get-started li h2{
+    width: 100%;
+    font-weight: 600;
+    font-size: 24px;
+}
+.get-started li h2::before{
+    content: 'x';
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    margin-right: 20px;
+    z-index: -1;
+
+}
+.start-tutor .question{
+    font-weight: bold;
+}
+.start-tutor{
+    box-sizing: border-box;
+    height: 100vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 100px;
+    margin-top: 5%;
+    background: linear-gradient(to right, rgba(188, 237, 240, 0.3), rgb(255, 255, 255));
+    padding-top: 100px;
+    
+
+  }
+.start-tutor  p{
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+
   @media screen and (max-width: 1036px) {
       body {
           font-size: 12px;
